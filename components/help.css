@@ -1,0 +1,58 @@
+/* src/components/Help.css */
+body {
+    background: #ffffff;
+    color: #000;
+  }
+  
+  .help-page {
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-family: "Segoe UI", sans-serif;
+    color: #000; /* Corrected from #fff to black text */
+  }
+  
+  .help-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #f5f5f5; /* Light background for cards */
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .help-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #000;
+  }
+  
+  .faq {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq h3 {
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .faq p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .help-container a {
+    color: #4caf50; /* Maintain highlight color */
+    text-decoration: underline;
+  }
+  
+  .help-container a:hover {
+    opacity: 0.8;
+  }
+  

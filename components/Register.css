@@ -1,0 +1,77 @@
+/* src/components/Register.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to bottom right, #eafaf8, #f2fefe);
+  }
+  
+  .register-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .register-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .register-card input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+  }
+  
+  .register-card button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .register-card button:hover {
+    background-color: #43a047;
+  }
+  
+  .register-login {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .register-login a {
+    color: #2e7d32;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .register-login a:hover {
+    text-decoration: underline;
+  }
+  

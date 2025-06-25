@@ -1,0 +1,80 @@
+/* src/components/Login.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to bottom right, #eafaf8, #f2fefe);
+    /* ✅ Removed height: 100% and overflow: hidden */
+  }
+  
+  /* Wrapper to center the card */
+  .login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem; /* added padding to ensure breathing space on small screens */
+  }
+  
+  /* Card styles */
+  .login-card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-card input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+  }
+  
+  .login-card button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-card button:hover {
+    background-color: #43a047;
+  }
+  
+  .login-register {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .login-register a {
+    color: #2e7d32;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .login-register a:hover {
+    text-decoration: underline;
+  }
+  

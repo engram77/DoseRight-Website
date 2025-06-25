@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+  color: #000;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: transparent;
+}
+
+.topnav .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #6bebd0;
+}
+
+.topnav .status {
+  background-color: #2196f3;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.date-time h2,
+.date-time h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.medicines-card {
+  background-color: #f2f2f2;
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.medicines-card h4 {
+  margin-top: 0;
+  font-weight: 500;
+  color: #000;
+}
+
+.medicines-card table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.medicines-card th,
+.medicines-card td {
+  text-align: left;
+  padding: 0.75rem;
+  color: #000;
+}
+
+.medicines-card tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.medicines-card .status.pending {
+  color: #f9a825;
+  font-weight: bold;
+}
+
+.medicines-card .status.missed {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.schedule-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.schedule-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.right-column {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right-column h3 {
+  margin: 0;
+  align-self: flex-end;
+  font-weight: 400;
+}
+
+.settings-card {
+  background-color: #f2f2f2;
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #000;
+}
+
+.settings-card h4 {
+  margin-top: 0;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.settings-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-card li {
+  margin: 0.5rem 0;
+}
+
+.settings-card a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.settings-card a:hover {
+  color: #6bebd0;
+}
+
+.refill-card {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #ef5350;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+}
+
+.refill-card p {
+  margin: 0.5rem 0;
+}
+
+.refill-card .refill-count {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.refill-needed-card,
+.inventory-card {
+  background-color: #f2f2f2;
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 200px;
+  color: #000;
+}
+
+.refill-needed-card h3,
+.inventory-card h3 {
+  margin-top: 0;
+  font-weight: 500;
+  color: #000;
+}
+
+.refill-needed-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0 0;
+}
+
+.refill-needed-card li {
+  margin: 0.25rem 0;
+  color: #f9a825;
+  font-weight: 600;
+}
+
+.inventory-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.5rem;
+}
+
+.inventory-card th,
+.inventory-card td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+.inventory-card p {
+  margin: 0;
+  font-weight: 500;
+  color: #000;
+}
+
+.inventory-card td:nth-child(2),
+.inventory-card th:nth-child(2) {
+  text-align: right;
+}
